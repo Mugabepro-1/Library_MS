@@ -1,4 +1,4 @@
-package people;
+package library.people;
 
 public class Member {
 }
