@@ -9,12 +9,11 @@ public class Member extends Person {
     private int memberID;
     private List<Book> borrowedBooks;
 
-    public void borrowBook(Book book){
-        borrowedBooks.add(book);
+    public Member(String fullName, String address, String email){
+        super(fullName, address, email);
     }
-    public void returnBook(Book book){
-        borrowedBooks.remove(book);
-    }
+
+
     public int getBorrowedBooksCount(){
         return borrowedBooks.size();
     }

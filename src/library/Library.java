@@ -24,6 +24,9 @@ public class Library {
         }
         System.out.println("Book not found");
     }
-    public void issueBook(String title, String )
+    public void issueBook(String title, String fullName, String email){
+        super(title);
+        super(fullName, email)
+    }
 
 }
