@@ -2,6 +2,7 @@ package library.people;
 
 import library.materials.Book;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Member extends Person {
@@ -17,5 +18,7 @@ public class Member extends Person {
     public int getBorrowedBooksCount(){
         return borrowedBooks.size();
     }
-
+    public LocalDate getDueDate(Book book){
+        return LocalDate.now().plusDays(3);
+    }
 }
